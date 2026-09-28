@@ -15,4 +15,5 @@ while conte <= alunos:
     conte += 1
 print("\n"+"="*40)
 print(f"O melhor aluno foi {melhorAluno} com a {maiorNota:.2f}")
+print("O resto vai ser tudo petista")
 print("\n"+"="*40)
