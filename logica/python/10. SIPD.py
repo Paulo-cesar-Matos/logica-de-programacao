@@ -13,7 +13,7 @@ linkedin = ("https://www.linkedin.com/in/paulo-c%C3%A9sar-matos-658324315/?isSel
 rickroll = ("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
 
 # Houseparty
-houseparty = ("https://www.youtube.com/watch?v=4lQDepOPeiE")
+houseparty_url = "https://www.youtube.com/watch?v=4lQDepOPeiE"
 
 # pergunta
 pergunta = ("https://dontpad.com/nao-sei")
@@ -58,7 +58,46 @@ def gerar_arquivo_para_encontrar():
         f.write("Você me achou :)))))")
     print("Me acha aí agora kkkk")
 
-def abrir_rede_social():
+def video_importante():
+    # verifica se algum dos navegadores está instalado e abre o link do vídeo mais importante do mundo
+    if os.path.exists(chrome):
+        subprocess.run([chrome, rickroll])
+    elif os.path.exists(firefox):
+        subprocess.run([firefox, rickroll])
+    elif os.path.exists(edge):
+        subprocess.run([edge, rickroll])
+
+def houseparty_links():
+    # verifica se algum dos navegadores está instalado e abre o link da playlist de 2 horas de música de houseparty
+    if os.path.exists(chrome):
+        subprocess.run([chrome, houseparty_url])
+    elif os.path.exists(firefox):
+        subprocess.run([firefox, houseparty_url])
+    elif os.path.exists(edge):
+        subprocess.run([edge, houseparty_url])
+
+def pergunta_dificil():
+    # verifica se algum dos navegadores está instalado e abre o link da pergunta mais dificil do mundo
+    if os.path.exists(chrome):
+        subprocess.run([chrome, pergunta])
+    elif os.path.exists(firefox):
+        subprocess.run([firefox, pergunta])
+    elif os.path.exists(edge):
+        subprocess.run([edge, pergunta])
+
+def cat_slap_video():
+    # verifica se algum dos navegadores está instalado e abre o link do vídeo do gato batendo na mão
+    if os.path.exists(chrome):
+        subprocess.run([chrome, cat_slap])
+    elif os.path.exists(firefox):
+        subprocess.run([firefox, cat_slap])
+    elif os.path.exists(edge):
+        subprocess.run([edge, cat_slap])
+
+def executar_todos_exercicios():
+    
+
+def abrir_rede_social(): #type: ignore
     # verifica se algum dos navegadores está instalado e abre o link do tema do homem-aranha
     if os.path.exists(chrome):
         subprocess.run([chrome, instagram, facebook, linkedin])
