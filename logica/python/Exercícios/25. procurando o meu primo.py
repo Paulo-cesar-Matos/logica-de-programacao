@@ -1,4 +1,4 @@
-num = int(input("Digite o número do seu primo: "))
+num = int(input("Digite o número: "))
 c = 1
 contDiv = 0
 while c <= num:

@@ -5,4 +5,3 @@ while i <= n:
     fatorial *= i
     i += 1
 print(f"O fatorial de {n} é {fatorial}")
-

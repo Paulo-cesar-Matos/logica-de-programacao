@@ -1,0 +1,207 @@
+import turtle
+import subprocess
+import os
+
+# executaveis
+chrome = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+firefox = "C:\\Program Files\\Mozilla Firefox\\firefox.exe"
+edge = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
+
+# spiderman_theme
+spiderman_theme = ("https://www.youtube.com/watch?v=Q31M-89uJTY")
+
+# verifica se algum dos navegadores está instalado e abre o link do tema do homem-aranha
+if os.path.exists(chrome):
+    subprocess.run([chrome, spiderman_theme])
+elif os.path.exists(firefox):
+    subprocess.run([firefox, spiderman_theme])
+elif os.path.exists(edge):
+    subprocess.run([edge, spiderman_theme])
+
+# Set the turtle object
+t = turtle.Turtle()
+scr = turtle.Screen()
+scr.bgcolor("black")
+t.color("red")
+t.speed(5)
+
+# Draw the head
+t.goto(0, 0)
+t.begin_fill()
+t.circle(20)
+t.end_fill()
+
+# Draw the body
+t.penup()
+t.setheading(270)
+t.left(60)
+t.pendown()
+t.begin_fill()
+t.forward(20)
+t.right(80)
+t.forward(70)
+t.right(147)
+t.forward(70)
+t.right(80)
+t.forward(20)
+t.penup()
+t.end_fill()
+
+# Right upper first upper leg
+t.pendown()
+t.goto(10, 35)
+t.pendown()
+t.begin_fill()
+t.left(20)
+t.forward(25)
+t.right(60)
+t.forward(50)
+t.left(120)
+t.forward(80)
+t.right(175)
+t.forward(95)
+t.right(127)
+t.forward(63)
+t.left(60)
+t.forward(18)
+t.end_fill()
+
+# Right upper second leg
+t.pendown()
+t.goto(13, 25)
+t.pendown()
+t.begin_fill()
+t.left(90)
+t.left(90)
+t.forward(20)
+t.right(60)
+t.forward(80)
+t.left(125)
+t.forward(130)
+t.right(175)
+t.forward(145)
+t.right(128)
+t.forward(95)
+t.left(60)
+t.forward(20)
+t.end_fill()
+t.penup()
+
+# Left first upper leg of the spider
+t.pendown()
+t.goto(-10, 35)
+t.pendown()
+t.begin_fill()
+t.right(80)
+t.forward(25)
+t.left(60)
+t.forward(50)
+t.right(120)
+t.forward(80)
+t.left(175)
+t.forward(95)
+t.left(127)
+t.forward(63)
+t.right(60)
+t.forward(18)
+t.end_fill()
+
+# Left second upper leg of the spider
+t.pendown()
+t.goto(-13, 25)
+t.pendown()
+t.begin_fill()
+t.right(90)
+t.right(90)
+t.forward(20)
+t.left(60)
+t.forward(80)
+t.right(125)
+t.forward(130)
+t.left(175)
+t.forward(145)
+t.left(128)
+t.forward(95)
+t.right(60)
+t.forward(20)
+t.end_fill()
+t.penup()
+
+# Right first lower leg of spider
+t.pendown()
+t.goto(15, 12)
+t.left(60)
+t.begin_fill()
+t.forward(20)
+t.right(40)
+t.forward(95)
+t.right(100)
+t.right(135)
+t.right(175)
+t.right(120)
+t.left(90)
+t.forward(80)
+t.left(40)
+t.forward(20)
+t.end_fill()
+
+# Right second lower leg of the spider
+t.pendown()
+t.goto(11, 8)
+t.left(150)
+t.begin_fill()
+t.forward(25)
+t.right(10)
+t.forward(65)
+t.right(95)
+t.forward(70)
+t.right(175)
+t.right(60)
+t.left(85)
+t.forward(65)
+
+t.left(15)
+t.forward(15)
+t.end_fill()
+
+# Left lower first leg of the spider
+t.pendown()
+t.goto(-15, 14)
+t.right(3)
+t.begin_fill()
+t.forward(20)
+t.left(40)
+t.forward(95)
+t.left(100)
+t.left(135)
+t.left(175)
+t.left(120)
+t.right(90)
+t.forward(80)
+t.right(40)
+t.forward(20)
+t.end_fill()
+t.penup()
+
+# Left lower second leg of the spider
+t.pendown()
+t.goto(-11, 8)
+t.right(90)
+t.right(60)
+t.begin_fill()
+t.forward(25)
+t.left(10)
+t.forward(65)
+t.left(95)
+t.forward(70)
+t.left(175)
+t.left(85)
+t.forward(65)
+t.right(15)
+t.forward(15)
+t.end_fill()
+
+turtle.hideturtle()
+turtle.done()
+
+print("ficou horrível, eu sei")
