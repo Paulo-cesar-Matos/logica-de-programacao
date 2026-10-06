@@ -1,13 +1,39 @@
-C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\01. primeiro.py
-C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\02. atribuicoes.py
-C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\03. somas.py
-C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\04. media.py
-C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\05. funcao_aritmetica.py
-C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\06. maior_menor_que.py
-C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\07. p_e_q.py
-C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\08. triangulos.py
-C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\09. andando.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\02 - Primeiro Algoritmo\01. primeiro.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\03 - Comandos de Entrada e Operadores\02. atribuicoes.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\03 - Comandos de Entrada e Operadores\02. dolares.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\03 - Comandos de Entrada e Operadores\03. conversor-temp-c-f.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\03 - Comandos de Entrada e Operadores\03. somas.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\03 - Comandos de Entrada e Operadores\04. haddad.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\03 - Comandos de Entrada e Operadores\04. media.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\03 - Comandos de Entrada e Operadores\05. emprestimo.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\03 - Comandos de Entrada e Operadores\05. funcao_aritmetica.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\03 - Comandos de Entrada e Operadores\06. maior_menor_que.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\03 - Comandos de Entrada e Operadores\07. p_e_q.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\03 - Comandos de Entrada e Operadores\08. triangulos.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\04 - Estruturas Condicionais\01. idade.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\04 - Estruturas Condicionais\0111. eq_seg_grau.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\04 - Estruturas Condicionais\02. par_impar.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\04 - Estruturas Condicionais\03. imc.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\04 - Estruturas Condicionais\04. apto-a-direcao.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\04 - Estruturas Condicionais\05. notas.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\04 - Estruturas Condicionais\06. ir para bangladesh.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\04 - Estruturas Condicionais\11. crianca_esperanca.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\04 - Estruturas Condicionais\12. Funcionaris.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\04 - Estruturas Condicionais\13. desempenho_aluno.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\04 - Estruturas Condicionais\14. Futebol 2009.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\04 - Estruturas Condicionais\17. haddad 4x.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\05 - Estruturas de Repetição\09. andando.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\05 - Estruturas de Repetição\15. troca troca ( ͡° ͜ʖ ͡°).py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\05 - Estruturas de Repetição\16. somador_tamanho.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\05 - Estruturas de Repetição\18. dolares x4.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\05 - Estruturas de Repetição\19. contador.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\05 - Estruturas de Repetição\20. kbsa de sibola.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\05 - Estruturas de Repetição\21. somador.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\05 - Estruturas de Repetição\22. bol.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\05 - Estruturas de Repetição\23. negativos.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\05 - Estruturas de Repetição\24. fatoral.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\05 - Estruturas de Repetição\25. procurando o meu primo.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\05 - Estruturas de Repetição\26. for fim.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\05 - Estruturas de Repetição\tela_hack.py
 C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\10. SIPD.py
-C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\0111. eq_seg_grau.py
 C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\reste.py
-C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\tela_hack.py

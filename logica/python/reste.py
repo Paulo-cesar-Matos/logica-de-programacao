@@ -7,9 +7,12 @@ janela.wm_attributes("-topmost", True) #type: ignore
 frames = []
 i = 0
 
+import os
+
+caminho_gif = os.path.join(os.path.dirname(os.path.abspath(__file__)), "teste.gif")
 while True:
     try:
-        frames.append(tk.PhotoImage(file=f"C:\\Users\\paulomatos\\Documents\\GitHub\\aprendendo-python\\logica\\python\\teste.gif", format=f"gif -index {i}")) #type: ignore
+        frames.append(tk.PhotoImage(file=caminho_gif, format=f"gif -index {i}")) #type: ignore
         i += 1
     except tk.TclError:
         break

@@ -23,7 +23,7 @@ pergunta = "https://dontpad.com/nao-sei"
 cat_slap = "https://youtu.be/iym4Y88-a8E?si=nhBxPPms-mDb0wNr"
 
 # exec_tudo - abre todos os exercícios de script
-exec_tudo = f"C:\\Users\\{os.getlogin()}\\Documents\\GitHub\\aprendendo-python\\logica\\powershell\\exec-tudo.ps1"
+exec_tudo = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "powershell", "exec-tudo.ps1")
 
 # spiderman_theme
 spiderman_theme = "https://youtu.be/RWa6YaPH4jY?si=Akbd1XLcCWmOfET8&t=74"
@@ -300,9 +300,10 @@ while True:
         frames = []
         i = 0
 
+        caminho_gif = os.path.join(os.path.dirname(os.path.abspath(__file__)), "teste.gif")
         while True:
             try:
-                frames.append(tk.PhotoImage(file="C:\\Users\\paulomatos\\Documents\\GitHub\\aprendendo-python\\logica\\python\\teste.gif", format=f"gif -index {i}"))  # type: ignore
+                frames.append(tk.PhotoImage(file=caminho_gif, format=f"gif -index {i}"))  # type: ignore
                 i += 1
             except tk.TclError:
                 break
