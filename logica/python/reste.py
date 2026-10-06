@@ -1,207 +1,51 @@
-import turtle
-import subprocess
-import os
+import tkinter as tk
 
-# executaveis
-chrome = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
-firefox = "C:\\Program Files\\Mozilla Firefox\\firefox.exe"
-edge = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
+janela = tk.Tk()
+janela.overrideredirect(True)
+janela.wm_attributes("-topmost", True) #type: ignore
 
-# spiderman_theme
-spiderman_theme = ("https://www.youtube.com/watch?v=Q31M-89uJTY")
+frames = []
+i = 0
 
-# verifica se algum dos navegadores está instalado e abre o link do tema do homem-aranha
-if os.path.exists(chrome):
-    subprocess.run([chrome, spiderman_theme])
-elif os.path.exists(firefox):
-    subprocess.run([firefox, spiderman_theme])
-elif os.path.exists(edge):
-    subprocess.run([edge, spiderman_theme])
+while True:
+    try:
+        frames.append(tk.PhotoImage(file=f"C:\\Users\\paulomatos\\Documents\\GitHub\\aprendendo-python\\logica\\python\\teste.gif", format=f"gif -index {i}")) #type: ignore
+        i += 1
+    except tk.TclError:
+        break
 
-# Set the turtle object
-t = turtle.Turtle()
-scr = turtle.Screen()
-scr.bgcolor("black")
-t.color("red")
-t.speed(5)
+frame = 0
 
-# Draw the head
-t.goto(0, 0)
-t.begin_fill()
-t.circle(20)
-t.end_fill()
+label = tk.Label(janela)
+label.pack()
 
-# Draw the body
-t.penup()
-t.setheading(270)
-t.left(60)
-t.pendown()
-t.begin_fill()
-t.forward(20)
-t.right(80)
-t.forward(70)
-t.right(147)
-t.forward(70)
-t.right(80)
-t.forward(20)
-t.penup()
-t.end_fill()
+x, y = 0, 0
+dx, dy = 4, 4
 
-# Right upper first upper leg
-t.pendown()
-t.goto(10, 35)
-t.pendown()
-t.begin_fill()
-t.left(20)
-t.forward(25)
-t.right(60)
-t.forward(50)
-t.left(120)
-t.forward(80)
-t.right(175)
-t.forward(95)
-t.right(127)
-t.forward(63)
-t.left(60)
-t.forward(18)
-t.end_fill()
+def mover():
+    global x, y, dx, dy, frame
 
-# Right upper second leg
-t.pendown()
-t.goto(13, 25)
-t.pendown()
-t.begin_fill()
-t.left(90)
-t.left(90)
-t.forward(20)
-t.right(60)
-t.forward(80)
-t.left(125)
-t.forward(130)
-t.right(175)
-t.forward(145)
-t.right(128)
-t.forward(95)
-t.left(60)
-t.forward(20)
-t.end_fill()
-t.penup()
+    w = janela.winfo_screenwidth()
+    h = janela.winfo_screenheight()
 
-# Left first upper leg of the spider
-t.pendown()
-t.goto(-10, 35)
-t.pendown()
-t.begin_fill()
-t.right(80)
-t.forward(25)
-t.left(60)
-t.forward(50)
-t.right(120)
-t.forward(80)
-t.left(175)
-t.forward(95)
-t.left(127)
-t.forward(63)
-t.right(60)
-t.forward(18)
-t.end_fill()
+    img = frames[frame] #type: ignore
+    iw = img.width() #type: ignore
+    ih = img.height() #type: ignore
 
-# Left second upper leg of the spider
-t.pendown()
-t.goto(-13, 25)
-t.pendown()
-t.begin_fill()
-t.right(90)
-t.right(90)
-t.forward(20)
-t.left(60)
-t.forward(80)
-t.right(125)
-t.forward(130)
-t.left(175)
-t.forward(145)
-t.left(128)
-t.forward(95)
-t.right(60)
-t.forward(20)
-t.end_fill()
-t.penup()
+    x += dx
+    y += dy
 
-# Right first lower leg of spider
-t.pendown()
-t.goto(15, 12)
-t.left(60)
-t.begin_fill()
-t.forward(20)
-t.right(40)
-t.forward(95)
-t.right(100)
-t.right(135)
-t.right(175)
-t.right(120)
-t.left(90)
-t.forward(80)
-t.left(40)
-t.forward(20)
-t.end_fill()
+    if x <= 0 or x + iw >= w:
+        dx *= -1
 
-# Right second lower leg of the spider
-t.pendown()
-t.goto(11, 8)
-t.left(150)
-t.begin_fill()
-t.forward(25)
-t.right(10)
-t.forward(65)
-t.right(95)
-t.forward(70)
-t.right(175)
-t.right(60)
-t.left(85)
-t.forward(65)
+    if y <= 0 or y + ih >= h:
+        dy *= -1
 
-t.left(15)
-t.forward(15)
-t.end_fill()
+    frame = (frame + 1) % len(frames) #type: ignore
+    label.config(image=frames[frame]) #type: ignore
 
-# Left lower first leg of the spider
-t.pendown()
-t.goto(-15, 14)
-t.right(3)
-t.begin_fill()
-t.forward(20)
-t.left(40)
-t.forward(95)
-t.left(100)
-t.left(135)
-t.left(175)
-t.left(120)
-t.right(90)
-t.forward(80)
-t.right(40)
-t.forward(20)
-t.end_fill()
-t.penup()
+    janela.geometry(f"+{x}+{y}")
+    janela.after(20, mover)
 
-# Left lower second leg of the spider
-t.pendown()
-t.goto(-11, 8)
-t.right(90)
-t.right(60)
-t.begin_fill()
-t.forward(25)
-t.left(10)
-t.forward(65)
-t.left(95)
-t.forward(70)
-t.left(175)
-t.left(85)
-t.forward(65)
-t.right(15)
-t.forward(15)
-t.end_fill()
-
-turtle.hideturtle()
-turtle.done()
-
-print("ficou horrível, eu sei")
+mover()
+janela.mainloop()
