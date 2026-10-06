@@ -2,3 +2,4 @@
 .venv
 .idea
 \oracleJdk-27
+\__pycache__
