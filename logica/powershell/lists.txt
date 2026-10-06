@@ -1,0 +1,13 @@
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\01. primeiro.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\02. atribuicoes.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\03. somas.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\04. media.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\05. funcao_aritmetica.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\06. maior_menor_que.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\07. p_e_q.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\08. triangulos.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\09. andando.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\10. SIPD.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\0111. eq_seg_grau.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\reste.py
+C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python\tela_hack.py

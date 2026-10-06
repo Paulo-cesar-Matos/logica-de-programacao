@@ -1,0 +1,7 @@
+Get-ChildItem -Path C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica -Include *.py -Recurse -File -ErrorAction SilentlyContinue
+Get-ChildItem -Filter "*.py" -Recurse -File -ErrorAction SilentlyContinue | ForEach-Object {
+    $filePath = $_.FullName
+    Write-Host "Executing file: $filePath"
+    & python $filePath
+}
+Get-ChildItem -Path C:\Users\${USER}\Documents\GitHub\aprendendo-python\logica\python -Filter "*.py" | ForEach-Object { Start-Process -FilePath "python" -ArgumentList $_.FullName }

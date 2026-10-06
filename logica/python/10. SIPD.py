@@ -2,6 +2,7 @@
 import turtle
 import subprocess
 import os
+import tkinter as tk
 
 # variaveis do six tema
 #Redes
@@ -22,7 +23,7 @@ pergunta = ("https://dontpad.com/nao-sei")
 cat_slap = ("https://youtu.be/iym4Y88-a8E?si=nhBxPPms-mDb0wNr")
 
 # exec_tudo - abre todos os exercícios de script
-exec_tudo = (f"cmd.exe /c start logica/python/Exerc%C3%ADcios/25.%20procurando%20o%20meu%20primo.py & cmd.exe /c start logica/python/Exerc%C3%ADcios/26.%20for%20fim.py & cmd.exe /c start logica/python/07.%20p_e_q.py")
+exec_tudo = (f"C:\\Users\\{os.getlogin()}\\Documents\\GitHub\\aprendendo-python\\logica\\powershell\\exec-tudo.ps1")
 
 # spiderman_theme
 spiderman_theme = ("https://youtube.com./watch?=Q31M-89uJTY?si=oxw8maPv_GOAp6tI")
@@ -49,6 +50,7 @@ input("5 - Pessoas quando veem q vc fez a maior merda até agora")
 input("6 - Executar todos os execícios de lógica de programação")
 input("7 - Desenhar o Homem-Aranha")
 input("8 - Enrique")
+input("9 - Veja como eu sou um polar bear")
 input("98 - Abrir as redes sociais do criador do script")
 input("99 - Sair do sistema")
 
@@ -95,17 +97,8 @@ def cat_slap_video():
         subprocess.run([edge, cat_slap])
 
 def executar_todos_exercicios():
+    subprocess.run(["cmd.exe"])
     
-
-def abrir_rede_social(): #type: ignore
-    # verifica se algum dos navegadores está instalado e abre o link do tema do homem-aranha
-    if os.path.exists(chrome):
-        subprocess.run([chrome, instagram, facebook, linkedin])
-    elif os.path.exists(firefox):
-        subprocess.run([firefox, instagram, facebook, linkedin])
-    elif os.path.exists(edge):
-        subprocess.run([edge, instagram, facebook, linkedin])
-
 def desenhe_o_homem_aranha():
     # creditos: 
     # https://www.youtube.com/shorts/pYJidzHSaME
@@ -303,3 +296,55 @@ def desenhe_o_homem_aranha():
     turtle.done()
 
     print("ficou horrível, eu sei")
+
+def enrique_meme():
+    # verifica se algum dos navegadores está instalado e abre o link do meme do enrique
+    if os.path.exists(chrome):
+        subprocess.run([chrome, enrique])
+    elif os.path.exists(firefox):
+        subprocess.run([firefox, enrique])
+    elif os.path.exists(edge):
+        subprocess.run([edge, enrique])
+
+def polar_bear_figure_09():
+    # Janela
+    janela = tk.Tk()
+    janela.overrideredirect(True)  # Remove bordas
+    janela.attributes("-topmost", True)  # Sempre na frente
+
+    # Carrega a imagem
+    imagem = tk.PhotoImage(file="imagem.png")
+
+    label = tk.Label(janela, image=imagem, borderwidth=0)
+    label.pack()
+
+    x = 0
+    y = 100
+    dx = 3
+
+    def mover():
+        global x, dx
+
+        largura = janela.winfo_screenwidth()
+        img_largura = imagem.width()
+
+        x += dx
+
+        if x + img_largura >= largura or x <= 0:
+            dx *= -1
+
+        janela.geometry(f"+{x}+{y}")
+        janela.after(20, mover)
+
+    mover()
+
+    janela.mainloop()
+
+def abrir_rede_social(): #type: ignore
+    # verifica se algum dos navegadores está instalado e abre o link do tema do homem-aranha
+    if os.path.exists(chrome):
+        subprocess.run([chrome, instagram, facebook, linkedin])
+    elif os.path.exists(firefox):
+        subprocess.run([firefox, instagram, facebook, linkedin])
+    elif os.path.exists(edge):
+        subprocess.run([edge, instagram, facebook, linkedin])
