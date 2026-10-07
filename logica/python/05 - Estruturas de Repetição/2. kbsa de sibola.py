@@ -4,7 +4,6 @@ conte = 1
 maiorNota = 0.0
 melhorAluno = ""
 
-
 while conte <= alunos:
     print(f"\nAluno {conte}")
     nome_aluno = input("Nome do aluno: ")
