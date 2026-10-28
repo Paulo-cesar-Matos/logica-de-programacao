@@ -1,3 +1,5 @@
+# a maioria que ia carregar os hiperlinks iam abrir vídeos do youtube, mas por conta dos anúncios, que corta a graça desse script, preferi colocar arquivos e manter nesse repositório
+
 # imports
 import turtle
 import subprocess
@@ -11,7 +13,9 @@ facebook = "https://www.facebook.com/profile.php?id=100080909483358"
 linkedin = "https://www.linkedin.com/in/paulo-c%C3%A9sar-matos-658324315/?isSelfProfile=true"
 
 # rickroll 
+# (C) 
 rickroll = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+# https://www.youtube.com/watch?v=dQw4w9WgXcQ
 
 # Houseparty
 houseparty_url = "https://www.youtube.com/watch?v=4lQDepOPeiE"
@@ -39,7 +43,12 @@ arquivo = f"C:\\Users\\{os.getlogin()}\\Documents\\Nova pasta\\meu primo.txt"
 # enrique meme audio
 enrique = "https://youtu.be/UztEVUvBtkA?si=zFjxUyAK9DCp904Q&t=4"
 
+# (C) Linkin Park and all protected trademarks
+# foi colocado apenas a parte que interessa para o script
+# foi colocado assim por conta dos anuncios do youtube
 figure09 = "https://youtu.be/LpC0SKU6O00?si=ZqcaHlEeg3PjX8bI&t=48"
+# https://youtu.be/LpC0SKU6O00?si=ZqcaHlEeg3PjX8bI&t=48
+
 
 print("Sistema Integrado de Preguiça e Desprezo (SIPD)")
 print("Selecione uma das opções abaixo:")
